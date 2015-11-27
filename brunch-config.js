@@ -15,7 +15,11 @@ exports.config = {
   // Phoenix paths configuration
   paths: {
     // Which directories to watch
-    watched: ["web/static", "test/static"],
+    watched: [
+      "deps/phoenix/web/static",
+      "web/static",
+      "test/static"
+    ],
 
     // Where to compile files to
     public: "priv/static"
@@ -23,9 +27,15 @@ exports.config = {
 
   // Configure your plugins
   plugins: {
-    ES6to5: {
+    babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/^(web\/static\/vendor)/]
+    }
+  },
+
+  modules: {
+    autoRequire: {
+      "js/app.js": ["web/static/js/app"]
     }
   }
 };

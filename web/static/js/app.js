@@ -1,4 +1,4 @@
-import {Socket, LongPoller} from "phoenix"
+import {Socket, LongPoller} from "deps/phoenix/web/static/js/phoenix"
 
 class App {
 
