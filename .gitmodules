@@ -1,0 +1,3 @@
+[submodule "web/static/elm/lib/elm-phoenix"]
+	path = web/static/elm/lib/elm-phoenix
+	url = https://github.com/voltone/elm-phoenix.git

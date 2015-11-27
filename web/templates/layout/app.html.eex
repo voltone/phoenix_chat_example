@@ -36,6 +36,7 @@
     <!-- Begin page content -->
     <%= @inner %>
 
+    <script src="<%= static_path(@conn, "/js/phoenixchat.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
